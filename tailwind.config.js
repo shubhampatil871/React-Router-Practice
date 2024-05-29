@@ -1,4 +1,4 @@
-import daisyui from 'daisyui';
+/* eslint-disable no-undef */
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -8,6 +8,6 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["cupcake", "dark", "light","night","forest","garden","black"],
+    themes: ["cupcake", "dark", "light"],
   },
 };
