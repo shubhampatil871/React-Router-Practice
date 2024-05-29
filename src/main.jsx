@@ -14,6 +14,8 @@ import About from "./components/About/About.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import User from "./components/Users/User.jsx";
 
+const basename = import.meta.env.BASE_URL;
+
 // const router = createBrowserRouter([
 //   {
 //     path: "/",
@@ -43,7 +45,8 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="user/:userid" element={<User />} />
     </Route>
-  )
+  ),
+  { basename: basename }
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
